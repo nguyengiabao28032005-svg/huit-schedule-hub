@@ -3,7 +3,7 @@
 > Dự án bài thi thực hành - Môn học: Mã nguồn mở (MNM)  
 > Sinh viên thực hiện: **Nguyễn Gia Bảo** - MSSV: **2001230044**
 
-[![PHP Syntax Check (CI/CD)](https://github.com/huit-opensource/huit-schedule-hub/actions/workflows/ci.yml/badge.svg)](https://github.com/huit-opensource/huit-schedule-hub/actions)
+[![PHP Syntax Check (CI/CD)](https://github.com/nguyengiabao28032005-svg/huit-schedule-hub/actions/workflows/ci.yml/badge.svg)](https://github.com/nguyengiabao28032005-svg/huit-schedule-hub/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PHP](https://img.shields.io/badge/PHP-8.1%2B%20%7C%208.2%20%7C%208.3-777BB4?logo=php&logoColor=white)](https://php.net)
 [![Composer](https://img.shields.io/badge/Composer-2.x-885630?logo=composer&logoColor=white)](https://getcomposer.org)
