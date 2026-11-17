@@ -64,11 +64,12 @@ $currentPage = basename($_SERVER['PHP_SELF']);
         body {
             font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
             background-color: #f8fafc;
+            font-size: 15px; /* Tăng cỡ chữ chuẩn nền */
         }
         /* Custom scrollbar */
         ::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
+            width: 7px;
+            height: 7px;
         }
         ::-webkit-scrollbar-track {
             background: #f1f5f9;
@@ -89,61 +90,61 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 <body class="flex flex-col min-h-screen text-slate-800 bg-slate-50/70">
 
     <!-- Modern SaaS Header (Sticky Glassmorphic Navbar) -->
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/80 transition-all">
+    <header class="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-slate-200/80 transition-all shadow-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
+            <div class="flex justify-between h-20 items-center">
                 <!-- Left: Brand Logo & Identity -->
-                <div class="flex items-center space-x-3">
-                    <a href="index.php" class="flex items-center space-x-3 group">
-                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-600 via-indigo-700 to-slate-900 flex items-center justify-center text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 group-hover:shadow-indigo-500/30 transition-all duration-200">
-                            <i class="fa-solid fa-graduation-cap text-lg"></i>
+                <div class="flex items-center space-x-3.5">
+                    <a href="index.php" class="flex items-center space-x-3.5 group">
+                        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-indigo-600 via-indigo-700 to-slate-900 flex items-center justify-center text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 group-hover:shadow-indigo-500/30 transition-all duration-200">
+                            <i class="fa-solid fa-graduation-cap text-xl"></i>
                         </div>
                         <div>
                             <div class="flex items-center gap-2">
-                                <span class="text-base sm:text-lg font-bold text-slate-900 tracking-tight group-hover:text-indigo-600 transition-colors">
+                                <span class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight group-hover:text-indigo-600 transition-colors">
                                     HUIT Schedule Hub
                                 </span>
-                                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> v1.0
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> v1.0
                                 </span>
                             </div>
-                            <p class="text-[11px] text-slate-400 font-medium">Hệ thống phân lịch đa cơ sở thông minh</p>
+                            <p class="text-xs text-slate-500 font-medium">Hệ thống phân lịch đa cơ sở thông minh</p>
                         </div>
                     </a>
                 </div>
 
                 <!-- Center: Navigation Links -->
-                <nav class="hidden md:flex items-center space-x-1 lg:space-x-1.5 bg-slate-100/70 p-1 rounded-xl border border-slate-200/60">
-                    <a href="index.php" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-150 flex items-center gap-1.5 <?= $currentPage === 'index.php' ? 'bg-white text-indigo-700 shadow-xs border border-slate-200/60' : 'text-slate-600 hover:text-slate-900 hover:bg-white/50' ?>">
-                        <i class="fa-solid fa-chart-pie text-xs <?= $currentPage === 'index.php' ? 'text-indigo-600' : 'text-slate-400' ?>"></i>
+                <nav class="hidden md:flex items-center space-x-1.5 bg-slate-100/80 p-1.5 rounded-xl border border-slate-200/70">
+                    <a href="index.php" class="px-3.5 py-2 rounded-lg text-sm font-semibold transition-all duration-150 flex items-center gap-2 <?= $currentPage === 'index.php' ? 'bg-white text-indigo-700 shadow-xs border border-slate-200/80' : 'text-slate-600 hover:text-slate-900 hover:bg-white/60' ?>">
+                        <i class="fa-solid fa-chart-pie text-sm <?= $currentPage === 'index.php' ? 'text-indigo-600' : 'text-slate-400' ?>"></i>
                         <span>Tổng quan</span>
                     </a>
-                    <a href="schedules.php" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-150 flex items-center gap-1.5 <?= $currentPage === 'schedules.php' ? 'bg-white text-indigo-700 shadow-xs border border-slate-200/60' : 'text-slate-600 hover:text-slate-900 hover:bg-white/50' ?>">
-                        <i class="fa-solid fa-calendar-days text-xs <?= $currentPage === 'schedules.php' ? 'text-indigo-600' : 'text-slate-400' ?>"></i>
+                    <a href="schedules.php" class="px-3.5 py-2 rounded-lg text-sm font-semibold transition-all duration-150 flex items-center gap-2 <?= $currentPage === 'schedules.php' ? 'bg-white text-indigo-700 shadow-xs border border-slate-200/80' : 'text-slate-600 hover:text-slate-900 hover:bg-white/60' ?>">
+                        <i class="fa-solid fa-calendar-days text-sm <?= $currentPage === 'schedules.php' ? 'text-indigo-600' : 'text-slate-400' ?>"></i>
                         <span>Lịch giảng dạy</span>
                     </a>
-                    <a href="optimize.php" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-150 flex items-center gap-1.5 <?= $currentPage === 'optimize.php' ? 'bg-white text-amber-700 shadow-xs border border-amber-200/60' : 'text-slate-600 hover:text-slate-900 hover:bg-white/50' ?>">
-                        <i class="fa-solid fa-wand-magic-sparkles text-xs text-amber-500"></i>
+                    <a href="optimize.php" class="px-3.5 py-2 rounded-lg text-sm font-semibold transition-all duration-150 flex items-center gap-2 <?= $currentPage === 'optimize.php' ? 'bg-white text-amber-700 shadow-xs border border-amber-200/80' : 'text-slate-600 hover:text-slate-900 hover:bg-white/60' ?>">
+                        <i class="fa-solid fa-wand-magic-sparkles text-sm text-amber-500"></i>
                         <span>Tối ưu & Tiết trống</span>
                     </a>
-                    <a href="teachers.php" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-150 flex items-center gap-1.5 <?= $currentPage === 'teachers.php' ? 'bg-white text-indigo-700 shadow-xs border border-slate-200/60' : 'text-slate-600 hover:text-slate-900 hover:bg-white/50' ?>">
-                        <i class="fa-solid fa-chalkboard-user text-xs <?= $currentPage === 'teachers.php' ? 'text-indigo-600' : 'text-slate-400' ?>"></i>
+                    <a href="teachers.php" class="px-3.5 py-2 rounded-lg text-sm font-semibold transition-all duration-150 flex items-center gap-2 <?= $currentPage === 'teachers.php' ? 'bg-white text-indigo-700 shadow-xs border border-slate-200/80' : 'text-slate-600 hover:text-slate-900 hover:bg-white/60' ?>">
+                        <i class="fa-solid fa-chalkboard-user text-sm <?= $currentPage === 'teachers.php' ? 'text-indigo-600' : 'text-slate-400' ?>"></i>
                         <span>Giảng viên</span>
                     </a>
-                    <a href="branches.php" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-150 flex items-center gap-1.5 <?= $currentPage === 'branches.php' ? 'bg-white text-indigo-700 shadow-xs border border-slate-200/60' : 'text-slate-600 hover:text-slate-900 hover:bg-white/50' ?>">
-                        <i class="fa-solid fa-building-columns text-xs <?= $currentPage === 'branches.php' ? 'text-indigo-600' : 'text-slate-400' ?>"></i>
+                    <a href="branches.php" class="px-3.5 py-2 rounded-lg text-sm font-semibold transition-all duration-150 flex items-center gap-2 <?= $currentPage === 'branches.php' ? 'bg-white text-indigo-700 shadow-xs border border-slate-200/80' : 'text-slate-600 hover:text-slate-900 hover:bg-white/60' ?>">
+                        <i class="fa-solid fa-building-columns text-sm <?= $currentPage === 'branches.php' ? 'text-indigo-600' : 'text-slate-400' ?>"></i>
                         <span>Cơ sở</span>
                     </a>
                 </nav>
 
                 <!-- Right: Quick Actions (SaaS style) -->
-                <div class="flex items-center space-x-2 sm:space-x-3">
-                    <a href="teacher_portal.php" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition-all shadow-xs">
-                        <i class="fa-solid fa-id-card text-emerald-600"></i>
+                <div class="flex items-center space-x-2.5 sm:space-x-3">
+                    <a href="teacher_portal.php" class="inline-flex items-center gap-2 px-3.5 py-2 text-sm font-semibold rounded-xl text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition-all shadow-xs">
+                        <i class="fa-solid fa-id-card text-emerald-600 text-sm"></i>
                         <span class="hidden sm:inline">Cổng Giảng viên</span>
                     </a>
-                    <a href="schedules.php?action=create" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold rounded-lg text-white bg-slate-900 hover:bg-indigo-600 shadow-xs hover:shadow-indigo-500/20 active:scale-95 transition-all">
-                        <i class="fa-solid fa-plus text-[10px]"></i>
+                    <a href="schedules.php?action=create" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-xl text-white bg-slate-900 hover:bg-indigo-600 shadow-xs hover:shadow-indigo-500/20 active:scale-95 transition-all">
+                        <i class="fa-solid fa-plus text-xs"></i>
                         <span>Phân lịch mới</span>
                     </a>
                 </div>
@@ -152,4 +153,4 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     </header>
 
     <!-- Main Content Container -->
-    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-7">
